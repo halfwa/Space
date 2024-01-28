@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  space.api:
+    image: ${DOCKER_REGISTRY-}spaceapi
+    build:
+      context: .
+      dockerfile: src/backend/Space.API/Dockerfile
